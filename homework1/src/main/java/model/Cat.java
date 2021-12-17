@@ -88,22 +88,20 @@ public class Cat {
         if (hungryPoints <= 0) {
             System.out.print("I want to eat! ");
             return false;
-        } else {
-            System.out.println("Play with me!");
-            hungryPoints--;
-            return true;
         }
+        System.out.println("Play with me!");
+        hungryPoints--;
+        return true;
     }
 
     public boolean sleep() {
         if (hungryPoints <= 0) {
             System.out.print("I want to eat! ");
             return false;
-        } else {
-            System.out.println("Tsssss... Im sleepin'");
-            hungryPoints--;
-            return true;
         }
+        System.out.println("Tsssss... Im sleepin'");
+        hungryPoints--;
+        return true;
     }
 
     public boolean voice() {
@@ -120,22 +118,20 @@ public class Cat {
         if (hungryPoints <= 0) {
             System.out.print("I want to eat! ");
             return false;
-        } else {
-            System.out.println("I saw a mouse there");
-            hungryPoints--;
-            return true;
         }
+        System.out.println("I saw a mouse there");
+        hungryPoints--;
+        return true;
     }
 
     public boolean cleanHimself() {
         if (hungryPoints <= 0) {
             System.out.print("I want to eat! ");
             return false;
-        } else {
-            System.out.println("I like being clean");
-            hungryPoints--;
-            return true;
         }
+        System.out.println("I like being clean");
+        hungryPoints--;
+        return true;
     }
 
     public void liveAnotherDay() {
