@@ -3,13 +3,24 @@ package animals;
 import food.Food;
 
 public abstract class Animal {
+    protected int hungryPoints;
+    protected String name;
+
     public abstract boolean eat(Food food);
 
-    public abstract String getName();
+    public String getName(){
+        return name;
+    }
 
-    public abstract void setName(String name);
+    public void setName(String name){
+        this.name = name;
+    }
 
-    public abstract int getHungryPoints();
+    public int getHungryPoints(){
+        return hungryPoints;
+    }
 
-    public abstract void setHungryPoints(int hungryPoints);
+    public void setHungryPoints(int hungryPoints){
+        this.hungryPoints = hungryPoints;
+    }
 }
