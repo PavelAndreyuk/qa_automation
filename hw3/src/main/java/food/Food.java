@@ -1,11 +1,22 @@
 package food;
 
 public abstract class Food {
-    public abstract String getName();
+    protected String name;
+    protected int hungryPoints = 1;
 
-    public abstract void setName(String name);
+    public String getName() {
+        return this.name;
+    }
 
-    public abstract int getHungryPoints();
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    public abstract void setHungryPoints(int hungryPoints);
+    public int getHungryPoints() {
+        return hungryPoints;
+    }
+
+    public void setHungryPoints(int hungryPoints) {
+        this.hungryPoints = hungryPoints;
+    }
 }

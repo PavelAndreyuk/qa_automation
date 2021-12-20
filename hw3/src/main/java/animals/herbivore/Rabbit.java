@@ -14,28 +14,8 @@ public class Rabbit extends Herbivore implements Run {
     }
 
     @Override
-    public int getHungryPoints() {
-        return hungryPoints;
-    }
-
-    @Override
-    public void setHungryPoints(int hungryPoints) {
-        this.hungryPoints = hungryPoints;
-    }
-
-    @Override
     public Size getSize() {
         return this.size;
-    }
-
-    @Override
-    public String getName() {
-        return name;
-    }
-
-    @Override
-    public void setName(String name) {
-        this.name = name;
     }
 
     public void run() {

@@ -10,16 +10,23 @@ public abstract class Animal {
 
     public abstract boolean eat(Food food) throws WrongFoodException;
 
-    public abstract String getName();
+    public String getName() {
+        return this.name;
+    }
 
-    public abstract void setName(String name);
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    public abstract int getHungryPoints();
+    public int getHungryPoints() {
+        return hungryPoints;
+    }
 
-    public abstract void setHungryPoints(int hungryPoints);
+    public void setHungryPoints(int hungryPoints) {
+        this.hungryPoints = hungryPoints;
+    }
 
     public abstract Size getSize();
-
 
     @Override
     public boolean equals(Object o) {
