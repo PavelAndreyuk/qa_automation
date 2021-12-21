@@ -5,17 +5,14 @@ import animals.interfaces.Run;
 import animals.interfaces.Voice;
 
 public class Cat extends Carnivorous implements Run, Voice {
-    private Size size = Size.SMALL;
 
     public Cat() {
+        size = Size.SMALL;
     }
 
     public Cat(String name) {
         this.name = name;
-    }
-
-    public Size getSize() {
-        return this.size;
+        size = Size.SMALL;
     }
 
     public String voice() {

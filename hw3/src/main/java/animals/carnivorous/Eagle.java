@@ -5,18 +5,14 @@ import animals.interfaces.Fly;
 import animals.interfaces.Voice;
 
 public class Eagle extends Carnivorous implements Fly, Voice {
-    private Size size = Size.MEDIUM;
 
     public Eagle() {
+        size = Size.MEDIUM;
     }
 
     public Eagle(String name) {
         this.name = name;
-    }
-
-    @Override
-    public Size getSize() {
-        return this.size;
+        size = Size.MEDIUM;
     }
 
     public void fly() {

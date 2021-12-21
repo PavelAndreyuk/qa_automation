@@ -6,18 +6,14 @@ import animals.interfaces.Swim;
 import animals.interfaces.Voice;
 
 public class Duck extends Herbivore implements Swim, Fly, Voice {
-    private Size size = Size.SMALL;
 
     public Duck() {
+        size = Size.SMALL;
     }
 
     public Duck(String name) {
         this.name = name;
-    }
-
-    @Override
-    public Size getSize() {
-        return this.size;
+        size = Size.SMALL;
     }
 
     public void fly() {

@@ -4,18 +4,14 @@ import animals.Size;
 import animals.interfaces.Run;
 
 public class Rabbit extends Herbivore implements Run {
-    private Size size = Size.EXTRA_SMALL;
 
     public Rabbit() {
+        size = Size.EXTRA_SMALL;
     }
 
     public Rabbit(String name) {
         this.name = name;
-    }
-
-    @Override
-    public Size getSize() {
-        return this.size;
+        size = Size.EXTRA_SMALL;
     }
 
     public void run() {

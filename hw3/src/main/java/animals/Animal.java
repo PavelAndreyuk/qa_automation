@@ -7,6 +7,7 @@ import java.util.Objects;
 public abstract class Animal {
     protected String name;
     protected int hungryPoints = 5;
+    protected Size size;
 
     public abstract boolean eat(Food food) throws WrongFoodException;
 
@@ -26,19 +27,20 @@ public abstract class Animal {
         this.hungryPoints = hungryPoints;
     }
 
-    public abstract Size getSize();
+    public Size getSize() {
+        return this.size;
+    }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Animal animal = (Animal) o;
-        return hungryPoints == animal.hungryPoints &&
-                Objects.equals(name, animal.name);
+        return name.equals(animal.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, hungryPoints);
+        return Objects.hash(name);
     }
 }

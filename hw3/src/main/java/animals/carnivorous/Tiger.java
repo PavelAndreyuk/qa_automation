@@ -6,18 +6,14 @@ import animals.interfaces.Swim;
 import animals.interfaces.Voice;
 
 public class Tiger extends Carnivorous implements Run, Swim, Voice {
-    private Size size = Size.LARGE;
 
     public Tiger() {
+        size = Size.LARGE;
     }
 
     public Tiger(String name) {
         this.name = name;
-    }
-
-    @Override
-    public Size getSize() {
-        return this.size;
+        size = Size.LARGE;
     }
 
     public void run() {

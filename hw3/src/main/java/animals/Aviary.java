@@ -26,9 +26,9 @@ public class Aviary<T extends Animal> {
     public void setSize(Size size) {
         this.size = size;
     }
-    
+
     public void add(T animal) {
-        if (animal.getSize().compareTo(size) == 0 || animal.getSize().compareTo(size) == -1) {
+        if (!(animal.getSize().compareTo(size) == 1)) {
             aviary.add(animal);
         } else System.out.println("This aviary doesn't fit for this animal");
     }
@@ -42,7 +42,7 @@ public class Aviary<T extends Animal> {
             Iterator<T> it = aviary.iterator();
             while (it.hasNext()) {
                 Animal animal = it.next();
-                if (animal.getName() == name) {
+                if (animal.getName().equals(name)) {
                     return animal;
                 }
             }
