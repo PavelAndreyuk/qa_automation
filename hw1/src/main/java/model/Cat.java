@@ -1,5 +1,12 @@
 package model;
 
+/**
+ * Simple class describing a cat.
+ * A cat can eat, play, sleep, voice, chase mouse and clean himself.
+ * When cat is hungry he can't do things and only asks for food.
+ * We can simulate one day of cat's life using {@link #liveAnotherDay()}.
+ * */
+
 public class Cat {
 
     private static int countCats;
