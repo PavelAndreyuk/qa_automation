@@ -12,5 +12,6 @@
         <module>hw3</module>
         <module>hw2</module>
         <module>hw1</module>
+        <module>hwUnitTest</module>
     </modules>
 </project>
