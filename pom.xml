@@ -11,6 +11,7 @@
     <modules>
         <module>hw2</module>
         <module>hw1</module>
+        <module>hwCucumber</module>
     </modules>
 
 </project>
