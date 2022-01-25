@@ -7,5 +7,5 @@ Internship of quality assurance automation with a few homeworks.
 - Unit tests with TestNG
 - API tests with Rest Assured
 - UI tests with Selenium
-- BDD with Cucmber
+- BDD with Cucumber
 - Reports with Allure
