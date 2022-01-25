@@ -12,6 +12,7 @@
         <module>hw3</module>
         <module>hw2</module>
         <module>hw1</module>
+        <module>hwSelenium</module>
         <module>hwAllure</module>
         <module>hwTestAPI</module>
         <module>hwUnitTest</module>
